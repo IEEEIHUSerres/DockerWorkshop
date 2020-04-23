@@ -15,6 +15,8 @@ FROM openjdk:8u252-jre-slim-buster
 
 COPY --from=builder /opt/app/target/spring-boot-demo-0.0.1-SNAPSHOT.jar /opt/app.jar
 
+WORKDIR /opt
+
 EXPOSE 8080
 
 CMD ["java","-jar","/opt/app.jar"]
