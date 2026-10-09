@@ -1,4 +1,4 @@
-FROM maven:3.10.0-amazoncorretto-8-debian-trixie as builder
+FROM maven:3-amazoncorretto-25-debian-trixie as builder
 
 RUN apt-get update
 RUN apt-get install git -y
